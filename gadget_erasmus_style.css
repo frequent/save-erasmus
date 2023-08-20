@@ -327,8 +327,20 @@ div[data-gadget-url$="gadget_erasmus_style.html"] footer section > div p a {
 }
 /** ******************* Content Style ******************* **/
 div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight h1 {
-
+  font-family: 'Ubuntu';
+  font-size: 4em;
+  color: #ffffff;
+  text-align: center;
+  margin-top: -1.5em;
+  letter-spacing: -2px;
 }
+div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight h1 + h2 {
+  font-family: 'Ubuntu';
+  text-align: center;
+  font-size: 2em;
+  letter-spacing: -1px;
+  color: #ffffff;
+}    
 div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight p {
 
 }
