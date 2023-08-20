@@ -331,7 +331,7 @@ div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight h1 {
   font-size: 4em;
   color: #ffffff;
   text-align: center;
-  margin-top: -1.5em;
+  margin-top: 1.5em;
   letter-spacing: -2px;
 }
 div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight h1 + h2 {
@@ -348,7 +348,9 @@ div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight figure {
   margin: 0;
 }
 div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight figure img {
-  width: 100%;
+  width: 64%;
+  display: block;
+  margin: 0 auto;
 }
 div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight figcaption {
   text-align: center;
