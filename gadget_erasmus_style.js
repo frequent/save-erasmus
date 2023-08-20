@@ -141,13 +141,14 @@
 
     domsugar(nav_menu, [
       child_list,
+      /*
       domsugar("li", [
         domsugar("a", {
           'href': "./langues.html",
           'class': "lang-wrapper"
         }, [
           domsugar('i', {
-            'class': "euromancer-lang euromancer-lang-" + language
+            'class': "erasmus-lang erasmus-lang-" + language
           }),
           domsugar('span', {
             'class': "navbar-language",
@@ -155,6 +156,7 @@
           })
         ])
       ])
+      */
     ]);
   }
 
