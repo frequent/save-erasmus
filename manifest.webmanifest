@@ -1,9 +1,9 @@
 {
   "manifest_version": 1,
   "version": "0.0.1",
-  "name": "euromancer.eu",
-  "short_name": "Euromancer",
-  "description": "Ici on parle de l'avenir de l'Union européenne et ses dimensions démocratiques et sociales",
+  "name": "Save Erasmus",
+  "short_name": "Save Erasmus",
+  "description": "En 2024, nous voterons pour l'Europe et contre tout parti cherchant à dissoudre l'Union européenne et mettre fin à Erasmus.",
   "default_locale": "fr",
   "icons": [
         {
