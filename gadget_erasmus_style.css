@@ -1,0 +1,924 @@
+/* ============================ COLOR ======================================= */
+
+/* ============================ FONTS ======================================= */
+/* -------------------------- Ubuntu Web Font ------------------------------- */
+/* ubuntu-regular - latin */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: url('font/ubuntu-v12-latin-regular.eot');
+  src: url('font/ubuntu-v12-latin-regular.eot?#iefix') format('embedded-opentype'),
+       url('font/ubuntu-v12-latin-regular.woff2') format('woff2'),
+       url('font/ubuntu-v12-latin-regular.woff') format('woff'),
+       url('font/ubuntu-v12-latin-regular.ttf') format('truetype');
+}
+/* ubuntu-700 - latin */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+  src: url('font/ubuntu-v12-latin-700.eot');
+  src: url('font/ubuntu-v12-latin-700.eot?#iefix') format('embedded-opentype'),
+       url('font/ubuntu-v12-latin-700.woff2') format('woff2'),
+       url('font/ubuntu-v12-latin-700.woff') format('woff'),
+       url('font/ubuntu-v12-latin-700.ttf') format('truetype');
+}
+/* ----------------------- Fontawesome brands ------------------------------- */
+/*! * Font Awesome Free 5.1.1 by @fontawesome - https://fontawesome.com * 
+      License - https://fontawesome.com/license 
+      (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) */
+
+@font-face {
+  font-family: "Font Awesome 5 Brands";
+  src: url('font/fa-brands-400.eot');
+  src: url('font/fa-brands-400.eot?#iefix') format("embedded-opentype"),
+       url('font/fa-brands-400.woff2') format("woff2"),
+       url('font/fa-brands-400.woff') format("woff"),
+       url('font/fa-brands-400.ttf') format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+.fa,.fab,.fal,.far,.fas{
+  -moz-osx-font-smoothing:grayscale;
+  -webkit-font-smoothing:antialiased;
+  display:inline-block;
+  font-style:normal;
+  font-variant:normal;
+  text-rendering:auto;
+  line-height:1
+}
+.fab {
+  font-family:"Font Awesome 5 Brands"
+}
+.fa-facebook:before{
+  content:"\f09a"
+}
+.fa-facebook-f:before{
+  content:"\f39e"
+}
+.fa-twitter:before{
+    content:"\f099"
+}
+.fa-twitter-square:before{
+    content:"\f081"
+}
+.fa-linkedin:before{
+    content:"\f0e1"
+}
+.fa-linkedin-square:before{
+    content:"\f08c"
+}
+.fa-instagram:before{
+    content:"\f16d"
+}
+.fa-instagram-square:before{
+    content:"\e055"
+}
+.fa-tiktok:before {
+    content: "\e07b";
+}
+.fa-youtube:before {
+    content: "\f167";
+}
+.fa-twitch:before {
+    content: "\f1e8";
+}
+
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Ubuntu', 'source_sans_proregular', 'Arial', 'Helvetica', sans-serif;
+  overflow-x: hidden;
+  background-color: #20110d;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 20px 0;
+}
+
+p {
+  font-size: 18px;
+  line-height: 28px;
+  margin: 0 0 32px 0;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+/** ******************* Container Layout ******************* **/
+div[data-gadget-url$="gadget_erasmus_style.html"] header > div {
+  max-width: 1150px;
+  margin: 0 auto;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  z-index: 20;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] main {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1150px;
+}
+@media screen and (max-width:44em) {
+  div[data-gadget-url$="gadget_erasmus_style.html"] main {
+    width: 100%;
+    padding-left: 1em;
+    padding-right: 1em;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+}
+/** ******************* Header Style ******************* **/
+div[data-gadget-url$="gadget_erasmus_style.html"] header {
+  margin: 0em 0 6em 0;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] header a {
+  font-size: 1.25em;
+  line-height: 30px;
+  text-decoration: none;
+  color: #ffffff;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] header > a > img,
+div[data-gadget-url$="gadget_erasmus_style.html"] header > a > svg {
+  margin: -0.5em 1em 0;
+  height: 1em;
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] header > a > h2 {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.25em;
+  padding-top: .8em;
+  font-weight: 400;
+  letter-spacing: -1pt;
+  padding-left: 1em;
+}
+@media screen and (max-width:44em) {
+  div[data-gadget-url$="gadget_erasmus_style.html"] header {
+    margin: 0;
+  }
+  div[data-gadget-url$="gadget_erasmus_style.html"] header > a > h2 {
+    padding-top: .25em;
+  }
+  div[data-gadget-url$="gadget_erasmus_style.html"] header a img {
+    height: 4em;
+  }
+  div[data-gadget-url$="gadget_erasmus_style.html"] header > a > svg {
+    margin: -0.5em 1em 0;
+  }
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] header {
+  display: flex; 
+  /* justify-content: space-between;*/
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: .5em;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] header section {
+  margin-left: auto;
+}
+@media screen and (max-width:44em) {
+  div[data-gadget-url$="gadget_erasmus_style.html"] header section {
+    margin-left: unset;
+    width: 100%;
+  }  
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] header nav ul li {
+  display: inline-block;
+  font-weight: bold;
+  margin: 0;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] header nav ul li:hover a,
+div[data-gadget-url$="gadget_erasmus_style.html"] header section ul li:hover a {
+  background-color: #606161;
+  color: #ffffff;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] header nav ul li a {
+  color: #ffffff;
+  padding: 8px 20px;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] header nav .navbar-language {
+  display: none;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] header .lang-wrapper {
+  display: inline-block;
+  vertical-align: middle;
+  height: 40px;
+  width: 4em;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] header nav {
+  padding-top: .5em;
+}
+@media screen and (max-width:44em) {
+  div[data-gadget-url$="gadget_erasmus_style.html"] header nav {
+    background: white;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    padding: 100px 0;
+    position: fixed;
+    right: 0;
+    top: 100%;
+    visibility: hidden;
+    width: 100%;
+    transition: all .5s ease-in-out;
+  }
+  div[data-gadget-url$="gadget_erasmus_style.html"] header nav .navbar-language {
+    display: block;
+  }
+  div[data-gadget-url$="gadget_erasmus_style.html"] header nav .lang-wrapper {
+    height: inherit;
+    width: auto;
+  }
+  div[data-gadget-url$="gadget_erasmus_style.html"] header .lang-wrapper {
+    width: 100%;
+  }
+  div[data-gadget-url$="gadget_erasmus_style.html"] header .lang-wrapper i,
+  div[data-gadget-url$="gadget_erasmus_style.html"] header .lang-wrapper span {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  div[data-gadget-url$="gadget_erasmus_style.html"] header .lang-wrapper i {
+    margin: 0 0.5em 0 0.75em;
+  }
+  div[data-gadget-url$="gadget_erasmus_style.html"] header nav img {
+    display: none;
+  }
+}
+
+div[data-gadget-url$="gadget_erasmus_style.html"] header ul {
+  padding: 0;
+  margin: 0;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] header li {
+  list-style: none;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] header .languages {
+  display: flex;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] header .languages span,
+div[data-gadget-url$="gadget_erasmus_style.html"] header .languages a {
+  display: block;
+  padding: 10px 20px;
+  font-weight: 600;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] header .languages .current {
+  background: #167297;
+  color: white;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] header ul {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+@media only screen and (max-width: 62em) {
+  div[data-gadget-url$="gadget_erasmus_style.html"] header {
+    z-index: 25;
+    padding: 15px 0 64px 0;
+  }
+}
+
+/** ******************* Languages **********************/
+div[data-gadget-url$="gadget_erasmus_style.html"] nav ul li:last-of-type a {
+  padding: 0;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] .euromancer-lang {
+  background: url(img/flags.min.png) no-repeat;
+  width: 32px;
+  height: 32px;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] .euromancer-lang-fr {
+  background-position: 0 -64px;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] .euromancer-lang-de {
+  background-position: -64px -32px;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] .euromancer-lang-en {
+  background-position: -32px -64px;
+}
+/** ******************* Social Media **********************/
+div[data-gadget-url$="gadget_erasmus_style.html"] .scm-menu li a {
+  width: 1.75em;
+  height: 1.75em;
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: .2em;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] .scm-menu li {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0.5em
+}
+@media only screen and (max-width: 44em) {
+  div[data-gadget-url$="gadget_erasmus_style.html"] header section ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+/** ******************* Hamburger Icon Style **********************/
+div[data-gadget-url$="gadget_erasmus_style.html"] header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] header .hamburger-menu {
+  display: none;
+}
+@media only screen and (max-width: 44em) {
+ div[data-gadget-url$="gadget_erasmus_style.html"] header .hamburger-menu {
+    display: block;
+  }
+  div[data-gadget-url$="gadget_erasmus_style.html"] header {
+    z-index: 25;
+    padding: 0 0 2em 0;
+  }
+
+  div[data-gadget-url$="gadget_erasmus_style.html"] header nav li {
+    padding: 16px 32px;
+  }
+
+  div[data-gadget-url$="gadget_erasmus_style.html"] header nav a {
+    font-size: 24px;
+  }
+  div[data-gadget-url$="gadget_erasmus_style.html"] header nav {
+    background: #20110d;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    padding: 100px 0;
+    position: fixed;
+    right: 0;
+    top: 100%;
+    visibility: hidden;
+    width: 100%;
+    transition: all .5s ease-in-out;
+  }
+  div[data-gadget-url$="gadget_erasmus_style.html"] header nav ul li {
+    display: block;
+    font-weight: bold;
+    text-align: left;
+  }
+  div[data-gadget-url$="gadget_erasmus_style.html"] header nav.open {
+    opacity: 1;
+    top: 0;
+    visibility: visible;
+    z-index: 100;
+  }
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] header .hamburger-menu {
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  width: 45px;
+  z-index: 999;
+  top: .5em;
+  right: 1em;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] header .hamburger-menu > span {
+  background: #ffffff;
+  display: block;
+  height: 3px;
+  margin: 5px 0;
+  width: 100%;
+  transition: all .5s ease-in-out;
+}
+
+div[data-gadget-url$="gadget_erasmus_style.html"] header .hamburger-menu.close > span:first-child {
+  transform: rotate(45deg);
+}
+
+div[data-gadget-url$="gadget_erasmus_style.html"] header .hamburger-menu.close > span:last-child {
+  margin-top: -8px;
+  transform: rotate(-45deg);
+}
+/** ******************* Footer Style ******************* **/
+div[data-gadget-url$="gadget_erasmus_style.html"] footer section h2,
+div[data-gadget-url$="gadget_erasmus_style.html"] footer section h3 {
+  font-weight: 400;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] footer section > h2 {
+  background-color: rgb(249 243 255);
+  padding: 1em 4em 0;
+  margin: 2em 0 0 0;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] footer section h3 {
+  color: #ffffff;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] footer section ul {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  padding: 0;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] footer section ul li {
+  list-style: none;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] footer section > ul {
+  background-color: rgb(249 243 255);
+  padding: 2em 5em 3em;
+  align-items: top;
+  justify-content: center;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] footer section > ul li {
+  padding: 1em;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] footer section > ul li a {
+  background-color: #502379;
+  color: #ffffff;
+  padding: .75em 1em;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.25em;
+  box-shadow: 5px 5px #1BBE6F;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] footer section > ul li a:hover {
+  background-color: #1BBE6F;
+  box-shadow: 5px 5px #502379;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] footer section > div {
+  background-color: #502379;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] footer section > div > ul:first-of-type {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] footer section > div > ul:first-of-type > li {
+  margin-top: 6em;
+  margin-bottom: 6em;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] footer section > div ul:first-of-type li h3 {
+  font-size: 2em;
+  color: #ffffff;
+  font-weight: bold;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] footer section > div ul:first-of-type li h3 + ul {
+  width: 80%;
+  margin: 0 auto;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] footer section > div ul:first-of-type li h3 + ul li a {
+  color: #ffffff;
+  font-size: 2em;
+  width: 1.5em;
+  height: 1.5em;
+  display: inline-block;
+  text-align: center;
+  padding-top: 0.15em;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] footer section > div ul:first-of-type li h3 + ul li a:hover {
+  background-color: #ffffff;
+  color: #502379;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] footer section > div p { 
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] footer section > div > ul:last-of-type {
+  background: #20110d;
+  padding: 3em 8em 3em;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] footer section > div > ul:last-of-type ul {
+  display: block;
+  padding-left: 1em;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] footer section > div > ul:last-of-type ul li {
+  display: block;
+  text-align: left;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] footer section > div > ul:last-of-type ul li h3 {
+  margin-bottom: .5em;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] footer section > div > ul:last-of-type ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] footer svg {
+  width: 13em;
+  height: auto;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] footer section > div > ul:last-of-type h3 + a {
+  color: #ffffff;
+  padding: 0.75em 1em;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] footer section > div > ul:last-of-type h3 + a:hover {
+  background: #606161;
+  color: #ffffff;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] footer section > div p {
+  padding: 1em;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] footer section > div p a {
+  color: #ffffff;  
+}
+@media only screen and (max-width: 44em) {
+  div[data-gadget-url$="gadget_erasmus_style.html"] footer section ul {
+    width: 100%;
+    display: block;
+  }
+  div[data-gadget-url$="gadget_erasmus_style.html"] footer section > ul {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  div[data-gadget-url$="gadget_erasmus_style.html"] footer section > h2 {
+    padding: 1em 1em 0;
+  }
+  div[data-gadget-url$="gadget_erasmus_style.html"] footer section > ul li {
+    display: block;
+    margin-bottom: 2em;
+  }
+  div[data-gadget-url$="gadget_erasmus_style.html"] footer section > div ul:first-of-type li {
+    display: inline;
+    padding: 0 1em;
+  }
+  div[data-gadget-url$="gadget_erasmus_style.html"] footer section > ul li a {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  div[data-gadget-url$="gadget_erasmus_style.html"] footer section > div > ul:first-of-type > li {
+    display:inline;
+    padding: 0 1em;
+  }
+  div[data-gadget-url$="gadget_erasmus_style.html"] footer section > div > ul:last-of-type ul li {
+    text-align: left;
+    margin: 0;
+  }
+  div[data-gadget-url$="gadget_erasmus_style.html"] footer section > div > ul:last-of-type {
+    padding: 3em;
+  }
+  div[data-gadget-url$="gadget_erasmus_style.html"] footer section > div > ul:last-of-type > li {
+    margin-bottom: 1em;
+  }
+  div[data-gadget-url$="gadget_erasmus_style.html"] footer section > div p {
+    text-align: center;
+  }
+}
+/** ******************* Content Style ******************* **/
+div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight h1 {
+  font-size: 4em;
+  background-color: #502379;
+  display: inline-block;
+  color: #ffffff;
+  padding: 0.15em 0.35em;
+  box-shadow: 5px 10px #1BBE6F;
+  margin-bottom: .5em;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight p {
+  line-height: 24px;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  column-count: 2;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight ul li {
+  padding: 1em;
+  margin-bottom: 1em;
+  padding-bottom: 0;
+  break-inside: avoid-column;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight ul li img {
+  margin-bottom: 1em;
+  width: 100%;
+  height: 18em;
+  object-fit: cover;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight ul li img + h2 {
+  background-color: #502379;
+  color: #ffffff;
+  display: inline;
+  padding: .15em 0 .15em 0;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight ul li img + h2 + p {
+  margin-top: .5em;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight figure {
+  margin: 0;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight figure img {
+  width: 100%;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight figcaption {
+  text-align: center;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight .float {
+  float: right;
+  padding: 2em;
+  width: 50%;
+}
+@media only screen and (max-width: 44em) {
+  div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight .float {
+    float: none;
+    padding: 1em;
+    width: 100%;
+  }
+  div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight h1 {
+    font-size: 3em;
+    text-align: center;
+    line-height: .9em;
+  }
+  div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight ul {
+    column-count: 1;
+  }
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] main a {
+  color: #502379;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] main a:hover {
+  color: #1BBE6F;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] main a[role=button] {
+  background-color: #502379;
+  color: #ffffff;
+  padding: .75em 1em;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.25em;
+  display: block;
+  max-width: 20%;
+  text-align: center;
+  margin: 0.5em auto;
+  box-shadow: 5px 5px #1BBE6F;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] main a[role=button]:hover {
+  background-color: #1BBE6F;
+  box-shadow: 5px 10px #502379;
+}
+
+@media only screen and (max-width: 44em) {
+  div[data-gadget-url$="gadget_erasmus_style.html"] main a[role=button] {
+    width: 100%;
+    max-width: unset;
+  }
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] main .sec-layout-highlight .banner h1,
+div[data-gadget-url$="gadget_erasmus_style.html"] main .sec-layout-highlight .banner h2,
+div[data-gadget-url$="gadget_erasmus_style.html"] main section h3 {
+  color: #ffffff;
+  background-color: #502379;
+  display: table;
+  padding: 0.15em 0.35em;
+  box-shadow: 5px 10px #1BBE6F;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] main p q {
+  margin: 4em;
+  text-align: center;
+  font-size: 1.5em;
+  display: block;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] main section section:nth-of-type(1) h3 {
+  box-shadow: 5px 5px #FDC220;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] main section section:nth-of-type(1) h3 ~ a {
+  background-color: #FDC220;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] main section section:nth-of-type(1) h3 ~ a:hover {
+  box-shadow: 5px 5px #FDC220;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] main section section:nth-of-type(2) h3 {
+  box-shadow: 5px 5px #E63E12;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] main section section:nth-of-type(2) h3 ~ a {
+  background-color: #E63E12;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] main section section:nth-of-type(2) h3 ~ a:hover {
+  box-shadow: 5px 5px #E63E12;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] main section section:nth-of-type(3) h3 {
+  box-shadow: 5px 5px #82D0F4;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] main section section:nth-of-type(3) h3 ~ a {
+  background-color: #82D0F4;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] main section section:nth-of-type(3) h3 ~ a:hover {
+  box-shadow: 5px 5px #82D0F4;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] main section section:nth-of-type(4) h3 {
+  box-shadow: 5px 5px #1BBE6F;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] main section section:nth-of-type(4) h3 ~ a {
+  background-color: #1BBE6F;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] main section section:nth-of-type(4) h3 ~ a:hover {
+  box-shadow: 5px 5px #1BBE6F;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] main section section h3 {
+  margin-top: -1.5em;
+  font-size: 2.5em;
+  position: relative;
+  top: 1em;
+  left: .5em;
+  z-index: 10;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] main section section h3 ~ a[role="button"] {
+  display: inline;
+  position: relative;
+  left: 70%;
+  box-shadow: 5px 5px #502379;
+  bottom: 1em;
+}    
+div[data-gadget-url$="gadget_erasmus_style.html"] main section section h3 ~ img {
+  /* clip-path: polygon(18.75% 0, 81.25% 0, 81.25% 100%, 18.75% 100%); */ 
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] main section section p {
+  padding: 2em;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] main section section div a {
+  color: #ffffff;
+  padding: 0.5em;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.25em;
+  display: inline-block;
+  text-align: center;
+  margin: -1em 0 2em 0;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] main section section div a[role="button"]:hover {
+  background-color: #502379;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] main section section div a svg {
+  padding: 2px 0 0 0;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] main section section {
+  display: flex;
+  margin-bottom: 2em;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] main section section:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] main section section div {
+  flex: 1;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] main section .banner figure {
+  margin-left: -20%;
+  margin-right: -20%;
+  margin-top: -24%;
+  clip-path: polygon(0 24%, 100% 24%, 100% 100%, 0% 100%); 
+  pointer-events: none;
+}
+@media only screen and (max-width: 44em) {
+  div[data-gadget-url$="gadget_erasmus_style.html"] main section section {
+    display: unset;
+  }
+  div[data-gadget-url$="gadget_erasmus_style.html"] main section section:nth-child(2n) {
+    flex-direction: unset;
+  }
+  div[data-gadget-url$="gadget_erasmus_style.html"] main section section div {
+    display: block;
+    width: 100%;
+  }
+  div[data-gadget-url$="gadget_erasmus_style.html"] main section section h3 ~ a {
+    position: static;
+    display: block;
+  }
+  div[data-gadget-url$="gadget_erasmus_style.html"] main section section h3 ~ a[role="button"] {
+    left: 49%;
+  }
+  div[data-gadget-url$="gadget_erasmus_style.html"] main p q {
+   margin: 3em .5em;
+  }
+}
+
+div[data-gadget-url$="gadget_erasmus_style.html"] main section .banner-yellow,
+div[data-gadget-url$="gadget_erasmus_style.html"] main section .banner-red,
+div[data-gadget-url$="gadget_erasmus_style.html"] main section .banner-blue,
+div[data-gadget-url$="gadget_erasmus_style.html"] main section .banner-green {
+  position: relative;
+  margin-bottom: 3em;
+  pointer-events: none;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] main section .banner-yellow h1,
+div[data-gadget-url$="gadget_erasmus_style.html"] main section .banner-red h1,
+div[data-gadget-url$="gadget_erasmus_style.html"] main section .banner-blue h1,
+div[data-gadget-url$="gadget_erasmus_style.html"] main section .banner-green h1 {
+  z-index: 20;
+  position: absolute;
+  top: 40%;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] main .sec-layout-highlight .banner-yellow h1 {
+  box-shadow: 5px 10px #FDC220;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] main .sec-layout-highlight .banner-red h1 {
+  box-shadow: 5px 10px #E63E12;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] main .sec-layout-highlight .banner-blue h1 {
+  box-shadow: 5px 10px #82D0F4;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] main .sec-layout-highlight .banner-green h1 {
+  box-shadow: 5px 10px #1BBE6F;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] main section .banner-yellow h2,
+div[data-gadget-url$="gadget_erasmus_style.html"] main section .banner-red h2,
+div[data-gadget-url$="gadget_erasmus_style.html"] main section .banner-blue h2,
+div[data-gadget-url$="gadget_erasmus_style.html"] main section .banner-green h2 {
+  z-index: 20;
+  position: absolute;
+  top: 52%;
+  font-size: 2.5em;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] main .sec-layout-highlight .banner-yellow h2,
+div[data-gadget-url$="gadget_erasmus_style.html"] main .sec-layout-highlight .banner-yellow ~ h2{
+  box-shadow: 5px 5px #FDC220;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] main .sec-layout-highlight .banner-red h2,
+div[data-gadget-url$="gadget_erasmus_style.html"] main .sec-layout-highlight .banner-red ~ h2 {
+  box-shadow: 5px 5px #E63E12;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] main .sec-layout-highlight .banner-blue h2,
+div[data-gadget-url$="gadget_erasmus_style.html"] main .sec-layout-highlight .banner-blue ~ h2 {
+  box-shadow: 5px 5px #82D0F4;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] main .sec-layout-highlight .banner-green h2,
+div[data-gadget-url$="gadget_erasmus_style.html"] main .sec-layout-highlight .banner-green ~ h2 {
+  box-shadow: 5px 5px #1BBE6F;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] main section .banner-yellow ~ h2,
+div[data-gadget-url$="gadget_erasmus_style.html"] main section .banner-red ~ h2,
+div[data-gadget-url$="gadget_erasmus_style.html"] main section .banner-blue ~ h2,
+div[data-gadget-url$="gadget_erasmus_style.html"] main section .banner-green ~ h2 {
+  color: #ffffff;
+  background-color: #502379;
+  display: table;
+  padding: 0.15em 0.35em;
+  font-size: 2.5em;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] main section .banner-yellow ~ h2 ~ ul h3,
+div[data-gadget-url$="gadget_erasmus_style.html"] main section .banner-red ~ h2 ~ ul h3, 
+div[data-gadget-url$="gadget_erasmus_style.html"] main section .banner-blue ~ h2 ~ ul h3, 
+div[data-gadget-url$="gadget_erasmus_style.html"] main section .banner-green ~ h2 ~ ul h3 {
+  color: unset;
+  background-color: unset;
+  display: inline-block;
+  box-shadow: none;
+  position: static;
+  font-size: 1.5em;
+  padding: unset;
+  margin-bottom: 0.5em
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] main section .banner-yellow ~ h2 ~ ul,
+div[data-gadget-url$="gadget_erasmus_style.html"] main section .banner-red ~ h2 ~ ul, 
+div[data-gadget-url$="gadget_erasmus_style.html"] main section .banner-blue ~ h2 ~ ul, 
+div[data-gadget-url$="gadget_erasmus_style.html"] main section .banner-green ~ h2 ~ ul {
+  column-count: 3;
+}
+@media only screen and (max-width: 44em) {
+  div[data-gadget-url$="gadget_erasmus_style.html"] main section .banner-yellow h1,
+  div[data-gadget-url$="gadget_erasmus_style.html"] main section .banner-red h1,
+  div[data-gadget-url$="gadget_erasmus_style.html"] main section .banner-blue h1,
+  div[data-gadget-url$="gadget_erasmus_style.html"] main section .banner-green h1 {
+    font-size: 2.5em;
+  }
+  div[data-gadget-url$="gadget_erasmus_style.html"] main section .banner-yellow h2,
+  div[data-gadget-url$="gadget_erasmus_style.html"] main section .banner-red h2,
+  div[data-gadget-url$="gadget_erasmus_style.html"] main section .banner-blue h2,
+  div[data-gadget-url$="gadget_erasmus_style.html"] main section .banner-green h2 {
+    font-size: 1.5em;
+    top: 55%;
+    max-width: 92%;
+  }
+  div[data-gadget-url$="gadget_erasmus_style.html"] main section .banner-yellow ~ h2 ~ ul,
+  div[data-gadget-url$="gadget_erasmus_style.html"] main section .banner-red ~ h2 ~ ul, 
+  div[data-gadget-url$="gadget_erasmus_style.html"] main section .banner-blue ~ h2 ~ ul, 
+  div[data-gadget-url$="gadget_erasmus_style.html"] main section .banner-green ~ h2 ~ ul {
+    column-count: 1;
+  }
+}

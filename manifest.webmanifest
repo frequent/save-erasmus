@@ -1,0 +1,24 @@
+{
+  "manifest_version": 1,
+  "version": "0.0.1",
+  "name": "euromancer.eu",
+  "short_name": "Euromancer",
+  "description": "Ici on parle de l'avenir de l'Union européenne et ses dimensions démocratiques et sociales",
+  "default_locale": "fr",
+  "icons": [
+        {
+            "src": "img/icon_192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "img/icon_512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#502379"
+}
