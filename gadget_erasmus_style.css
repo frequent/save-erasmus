@@ -362,6 +362,19 @@ div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight figure i
 div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight figcaption {
   text-align: center;
 }
+div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight section {
+  border: 2px solid #ffffff;
+  padding: 1em;
+  border-radius: 1em;
+  max-width: 44em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight section p {
+  margin: 0;
+  padding: 1em;
+}
 @media only screen and (max-width: 44em) {
   div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight h1 {
     margin-top: 0.5em;
