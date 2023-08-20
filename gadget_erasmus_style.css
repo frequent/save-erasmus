@@ -279,6 +279,9 @@ div[data-gadget-url$="gadget_erasmus_style.html"] footer section > div > ul:last
 div[data-gadget-url$="gadget_erasmus_style.html"] footer section > div p {
   padding: 1em;
 }
+div[data-gadget-url$="gadget_erasmus_style.html"] footer section > div ul ~ p {
+  background-image: url(img/FR-Graphic-hero-background-rainbow.webp);
+}
 div[data-gadget-url$="gadget_erasmus_style.html"] footer section > div p a {
   color: #ffffff;  
 }
@@ -325,6 +328,7 @@ div[data-gadget-url$="gadget_erasmus_style.html"] footer section > div p a {
     text-align: center;
   }
 }
+
 /** ******************* Content Style ******************* **/
 div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight h1 {
   font-family: 'Ubuntu';
@@ -349,6 +353,7 @@ div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight p {
   max-width: 44em;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 5em;
 }
 div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight figure {
   margin: 0 0 2em 0;
@@ -370,6 +375,11 @@ div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight section 
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 2em;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight section h2 {
+  color: #ffff;
+  text-align: center;
+  margin: -2em 0 0 0;
 }
 div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight section p {
   margin: 0;
