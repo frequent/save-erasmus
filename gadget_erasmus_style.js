@@ -5,7 +5,7 @@
 
   var NAV_ITEM_LIST = ".navigation ul",
     NAVIGATION = ".navigation",
-    HAMBURGER = ".hamburger-menu",
+    //HAMBURGER = ".hamburger-menu",
     OPEN = "open",
     CLOSE = "close",
     SCM_ITEM_LIST = ".scm-menu ul",
@@ -332,6 +332,7 @@
       }
       return RSVP.all(promise_list);
     })
+    /*
     .onEvent('click', function (evt) {
       var gadget = this,
         target_element = evt.target.closest(HAMBURGER),
@@ -343,8 +344,10 @@
         gadget.element.querySelector(NAVIGATION).classList.toggle(OPEN);
         gadget.element.querySelector(HAMBURGER).classList.toggle(CLOSE);
       }
-    }, false, false);
-
+    }, false, false)
+    */
+    ;
+    
 
 
 }(window, document, RSVP, rJS, XMLHttpRequest, domsugar, Date));
