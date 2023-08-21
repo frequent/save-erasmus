@@ -344,7 +344,7 @@ div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight h1 + h2 
   font-size: 2em;
   letter-spacing: -1px;
   color: #ffffff;
-}    
+}
 div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight p {
   line-height: 21px;
   color: #ffffff;
@@ -353,7 +353,6 @@ div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight p {
   max-width: 44em;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 5em;
 }
 div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight figure {
   margin: 0 0 2em 0;
@@ -368,22 +367,29 @@ div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight figcapti
   text-align: center;
 }
 div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight section {
-  border: 2px solid #ffffff;
   padding: 1em;
-  border-radius: 1em;
   max-width: 44em;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 2em;
+  margin-top: 5em;
+  position: relative;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight section img {
+  position: absolute;
+  z-index: -1;
+  width: 44%;
+  right: 0;
+  top: 6em;
 }
 div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight section h2 {
   color: #ffff;
   text-align: center;
-  margin: -2em 0 0 0;
 }
 div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight section p {
   margin: 0;
   padding: 1em;
+  width: 50%;
 }
 @media only screen and (max-width: 44em) {
   div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight h1 {
@@ -400,6 +406,9 @@ div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight section 
   div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight figure img {
     width: 82%;
   }
+  div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight p {
+    margin: 16px 0;
+  }
 }
 div[data-gadget-url$="gadget_erasmus_style.html"] main a {
   color: #ffffff;
@@ -409,15 +418,22 @@ div[data-gadget-url$="gadget_erasmus_style.html"] main a {
   display: inline-block;
   margin: 0 auto;
   border-radius: 1em;
-  box-shadow: 2px 2px #f3f3f3;
+  box-shadow: 4px 4px #f3f3f3;
+  font-size: 1.25em;
+  text-align: center;
+  margin-left: 1.75em;
+  margin-top: 0.25em;
 }
 div[data-gadget-url$="gadget_erasmus_style.html"] main a:hover {
   background-color: #C0AFCE;
   color: #502379;
-  box-shadow: 4px 4px #f3f3f3;
+  font-weight: bold;
 }
-div[data-gadget-url$="gadget_erasmus_style.html"] main a:hover {
+div[data-gadget-url$="gadget_erasmus_style.html"] main a:active {
   box-shadow: 1px 1px #f3f3f3;
+  font-weight: bold;
+  background-color: #C0AFCE;
+  color: #502379;
 }
 div[data-gadget-url$="gadget_erasmus_style.html"] main a[role=button] {
 
