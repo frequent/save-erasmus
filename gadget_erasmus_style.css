@@ -409,8 +409,18 @@ div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight section 
   div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight p {
     margin: 16px 0;
   }
+  div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight section p {
+    margin: 0;
+    padding: 0;
+    width: auto;
+  }
+  div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight section img {
+    width: auto;
+    position: static;
+  }
 }
-div[data-gadget-url$="gadget_erasmus_style.html"] main a {
+div[data-gadget-url$="gadget_erasmus_style.html"] main a[role="button"] {
+  /*
   color: #ffffff;
   text-decoration: none;
   padding: 1em;
@@ -423,11 +433,29 @@ div[data-gadget-url$="gadget_erasmus_style.html"] main a {
   text-align: center;
   margin-left: 1.75em;
   margin-top: 0.25em;
+  */
+  background: #EF2535;
+  border-radius: 12px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] main a[role="button"] span {
+  display: block;
+  padding: 12px 42px;
+  border-radius: 12px;
+  font-size: 1.25rem;
+  background: hsl(345deg 100% 47%);
+  color: white;
+  transform: translateY(-6px);
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] main a[role="button"]:active span {
+  transform: translateY(-2px);
 }
 div[data-gadget-url$="gadget_erasmus_style.html"] main a:hover {
   background-color: #C0AFCE;
   color: #502379;
-  font-weight: bold;
 }
 div[data-gadget-url$="gadget_erasmus_style.html"] main a:active {
   box-shadow: 1px 1px #f3f3f3;
