@@ -388,36 +388,8 @@ div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight section 
 }
 div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight section p {
   margin: 0;
-  padding: 1em;
+  padding: 1em 0;
   width: 50%;
-}
-@media only screen and (max-width: 44em) {
-  div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight h1 {
-    margin-top: 0.5em;
-    font-size: 3em;
-  }
-  div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight h1 + h2 {
-    font-size: 1.5em;
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -0.5em;
-  }
-  div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight figure img {
-    width: 82%;
-  }
-  div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight p {
-    margin: 16px 0;
-  }
-  div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight section p {
-    margin: 0;
-    padding: 0;
-    width: auto;
-  }
-  div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight section img {
-    width: auto;
-    position: static;
-  }
 }
 /* Button */
 div[data-gadget-url$="gadget_erasmus_style.html"] main a[role="button"] {
@@ -505,24 +477,39 @@ div[data-gadget-url$="gadget_erasmus_style.html"] main a[role="button"]:focus:no
   outline: none;
 }
 @media only screen and (max-width: 44em) {
-  div[data-gadget-url$="gadget_erasmus_style.html"] main a[role=button] {
-
+  div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight h1 {
+    margin-top: 0.5em;
+    font-size: 3em;
+  }
+  div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight h1 + h2 {
+    font-size: 1.5em;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -0.5em;
+  }
+  div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight figure img {
+    width: 82%;
+  }
+  div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight p {
+    margin: 16px 0;
+  }
+  div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight section {
+    text-align: center;
+  }
+  div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight section p {
+    margin: 0;
+    padding: 0;
+    width: auto;
+  }
+  div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight section img {
+    position: static;
+  }
+  div[data-gadget-url$="gadget_erasmus_style.html"] main a[role="button"] {
+    top: 1.5em;
   }
 }
 
-div[data-gadget-url$="gadget_erasmus_style.html"] main section section h3 {
-}
-div[data-gadget-url$="gadget_erasmus_style.html"] main section section h3 ~ a[role="button"] {
-}    
-div[data-gadget-url$="gadget_erasmus_style.html"] main section section p {
-  padding: 2em;
-}
-div[data-gadget-url$="gadget_erasmus_style.html"] main section section div a {
-
-}
-div[data-gadget-url$="gadget_erasmus_style.html"] main section section div a[role="button"]:hover {
-
-}
 @media only screen and (max-width: 44em) {
   div[data-gadget-url$="gadget_erasmus_style.html"] main section section div {
     display: block;
