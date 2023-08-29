@@ -239,7 +239,7 @@ div[data-gadget-url$="gadget_erasmus_style.html"] footer section > div p {
   padding: 0;
 }
 div[data-gadget-url$="gadget_erasmus_style.html"] footer section > div > ul:last-of-type {
-  background: #20110d;
+  background: #502379;
   padding: 3em 8em 3em;
   text-align: center;
   align-items: center;
@@ -281,9 +281,13 @@ div[data-gadget-url$="gadget_erasmus_style.html"] footer section > div p {
 }
 div[data-gadget-url$="gadget_erasmus_style.html"] footer section > div ul ~ p {
   background-image: url(img/FR-Graphic-hero-background-rainbow.webp);
+  text-align: center;
 }
 div[data-gadget-url$="gadget_erasmus_style.html"] footer section > div p a {
   color: #ffffff;  
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] .footer-content {
+  text-align: center;
 }
 @media only screen and (max-width: 44em) {
   div[data-gadget-url$="gadget_erasmus_style.html"] footer section ul {
@@ -371,7 +375,7 @@ div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight section 
   max-width: 44em;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 2em;
+  margin-bottom: 5em;
   margin-top: 5em;
   position: relative;
 }
