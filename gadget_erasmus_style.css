@@ -495,7 +495,8 @@ div[data-gadget-url$="gadget_erasmus_style.html"] ul li h3 ~ svg {
   padding: 2em 0;
 }
 @media only screen and (max-width: 44em) {
-  div[data-gadget-url$="gadget_erasmus_style.html"] main a[role="button"] {
+  div[data-gadget-url$="gadget_erasmus_style.html"] main a[role="button"],
+  div[data-gadget-url$="gadget_erasmus_style.html"] footer a[role="button"]{
     left: 0;
   }
   div[data-gadget-url$="gadget_erasmus_style.html"] ul li h3 ~ figure {
