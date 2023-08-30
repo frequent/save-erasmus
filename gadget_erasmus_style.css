@@ -402,6 +402,9 @@ div[data-gadget-url$="gadget_erasmus_style.html"] footer a[role="button"] {
   text-decoration: none;
   left: 3em;
 }
+div[data-gadget-url$="gadget_erasmus_style.html"] footer a[role="button"] {
+  left: 0;
+}
 div[data-gadget-url$="gadget_erasmus_style.html"] main a[role="button"] .shadow,
 div[data-gadget-url$="gadget_erasmus_style.html"] footer a[role="button"] .shadow {
   position: absolute;
