@@ -242,7 +242,7 @@ div[data-gadget-url$="gadget_erasmus_style.html"] footer section > div > ul:last
   background: #502379;
   padding: 3em 8em 3em;
   text-align: center;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 div[data-gadget-url$="gadget_erasmus_style.html"] footer section > div > ul:last-of-type ul {
@@ -278,6 +278,7 @@ div[data-gadget-url$="gadget_erasmus_style.html"] footer section > div > ul:last
 }
 div[data-gadget-url$="gadget_erasmus_style.html"] footer section > div p {
   padding: 1em;
+  text-align: justify;
 }
 div[data-gadget-url$="gadget_erasmus_style.html"] footer section > div ul ~ p {
   background-image: url(img/FR-Graphic-hero-background-rainbow.webp);
@@ -305,18 +306,13 @@ div[data-gadget-url$="gadget_erasmus_style.html"] .footer-content {
     display: block;
     margin-bottom: 2em;
   }
-  div[data-gadget-url$="gadget_erasmus_style.html"] footer section > div ul:first-of-type li {
-    display: inline;
-    padding: 0 1em;
+  div[data-gadget-url$="gadget_erasmus_style.html"] footer section > div > ul:first-of-type > li {
+    margin: 2em 0;
   }
   div[data-gadget-url$="gadget_erasmus_style.html"] footer section > ul li a {
     display: block;
     width: 100%;
     text-align: center;
-  }
-  div[data-gadget-url$="gadget_erasmus_style.html"] footer section > div > ul:first-of-type > li {
-    display:inline;
-    padding: 0 1em;
   }
   div[data-gadget-url$="gadget_erasmus_style.html"] footer section > div > ul:last-of-type ul li {
     text-align: left;
@@ -324,9 +320,6 @@ div[data-gadget-url$="gadget_erasmus_style.html"] .footer-content {
   }
   div[data-gadget-url$="gadget_erasmus_style.html"] footer section > div > ul:last-of-type {
     padding: 3em;
-  }
-  div[data-gadget-url$="gadget_erasmus_style.html"] footer section > div > ul:last-of-type > li {
-    margin-bottom: 1em;
   }
   div[data-gadget-url$="gadget_erasmus_style.html"] footer section > div p {
     text-align: center;
@@ -406,6 +399,7 @@ div[data-gadget-url$="gadget_erasmus_style.html"] main a[role="button"] {
   transition: filter 250ms;
   display:inline-block;
   text-decoration: none;
+  left: 3em;
 }
 div[data-gadget-url$="gadget_erasmus_style.html"] main a[role="button"] .shadow {
   position: absolute;
@@ -480,7 +474,27 @@ div[data-gadget-url$="gadget_erasmus_style.html"] main a[role="button"]:active .
 div[data-gadget-url$="gadget_erasmus_style.html"] main a[role="button"]:focus:not(:focus-visible) {
   outline: none;
 }
+div[data-gadget-url$="gadget_erasmus_style.html"] ul li h3 ~ figure {
+  width: 25%;
+  margin: 0 auto;
+  border: 5px solid #fff;
+  border-radius: 5em;
+  background: rgba(255,255,255,.5);
+}
+div[data-gadget-url$="gadget_erasmus_style.html"] ul li h3 ~ svg {
+  padding: 2em 0;
+}
 @media only screen and (max-width: 44em) {
+  div[data-gadget-url$="gadget_erasmus_style.html"] main a[role="button"] {
+    left: 0;
+  }
+  div[data-gadget-url$="gadget_erasmus_style.html"] ul li h3 ~ figure {
+    width: 40%;
+    border-radius: 6em;
+  }
+  div[data-gadget-url$="gadget_erasmus_style.html"] ul li h3 ~ svg {
+    padding: 2em 0;
+  }
   div[data-gadget-url$="gadget_erasmus_style.html"] .sec-layout-highlight h1 {
     margin-top: 0.5em;
     font-size: 3em;
